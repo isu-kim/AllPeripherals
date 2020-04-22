@@ -16,3 +16,5 @@ I did not think those peripheral device companies would support any MacOS suppor
 This is my first time with Xcode environment development. I have done many small projects on Xcode, however this is my first time with Frameworks and all those external dynamic libraries. So, the code might not be perfect. If you happen to find any crashes or bugs, please please let me know. I will be modifying as soon as possible. 
 
 Contacts via email edina00@naver.com
+
+Also, Currently I have checked it working on Xcode environment, however was not able to export this project successfully. I am trying as much as possible. It would take some time. If you know well about Xcode,, please please let me know.  Any help would be appreciated very much!
