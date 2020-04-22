@@ -26,7 +26,7 @@ public:
     /// So I am not 100% sure why this function works. If you know how this function works 100%,  please let me know
     ConnectrionBridge(void){
         servsock = socket(AF_INET, SOCK_STREAM, 0);
-        if(servsock < 0) perror("Failed to create a socket");
+        if(servsock < 0) perror("[ERROR] Failed to create a socket");
 
         enable = 1;
         setsockopt(servsock, SOL_SOCKET, SO_REUSEADDR, (char*)&enable, sizeof(int));
@@ -51,6 +51,7 @@ public:
 
     }
     
+    /// A member function that intializes color to 0, 0, 0 in order to make it more stable and not crash.
     void intializeBeforeColor(void){
         BeforeColor.R = 0;
         BeforeColor.G = 0;
@@ -94,9 +95,14 @@ public:
         tempVal.G = cBuffer[1];
         tempVal.B = cBuffer[2];
 
+        
         return tempVal;
     }
     
+    /// A function that checks if new received RGBVAL type of data is new color
+    /// @param newVal The new value of RGBVAL type to compair.
+    /// @returns true if two colors are not the same color.
+    /// @returns false if two colors are the same.
     bool isDifferentColor(RGBVAL newVal){
         if ((BeforeColor.R - newVal.R) || (BeforeColor.G - newVal.G) || (BeforeColor.B - newVal.B)){
             BeforeColor.R = newVal.R;
