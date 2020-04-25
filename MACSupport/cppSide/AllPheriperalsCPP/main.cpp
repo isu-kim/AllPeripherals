@@ -10,7 +10,7 @@
 #include <unistd.h>
 #include "Networks/Bridge.cpp" // If I load bridge later than corsair, it crashes. kind of odd...
 #include "Wrappers/CorsairWrapper.cpp"
-
+#include "Wrappers/CUESDK.framework/Headers/CUESDK.h"
 
 /// A Functiont at syncs all device colors into one color.
 /// The parameter CorsairObj would be later changed to some other class for all integration.
@@ -54,6 +54,9 @@ int main(int argc, const char * argv[]) {
             SyncAllColors(CorsairObj, BridgeObj);
             break;
             
+        case 2:
+            std::cout << "[Server] Received Mode 2 : Rainbow All" << std::endl;
+            SyncAllColors(CorsairObj, BridgeObj);
         default:
             break;
     }

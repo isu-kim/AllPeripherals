@@ -66,13 +66,19 @@ public:
     void getOperationMode(void){
         int buffer[1];
         recv(clientsock, buffer, 1, 0);
+        buffer[0] = buffer[0] - 32512; // For Release Version. It's kind of odd...
+        
         std::cout << "[Server] Received Operating Mode : " << buffer[0] << std::endl;
         std::cout << "[Server] The operating mode would be : ";
         operationMode = buffer[0];
-        
+                
         switch (operationMode) {
             case 1:
-                std::cout << "All Syncing" << std::endl;
+                std::cout << "Screen Reactive" << std::endl;
+                break;
+                
+            case 2:
+                std::cout << "Rainbow All" << std::endl;
                 break;
                 
             default:
@@ -95,6 +101,7 @@ public:
         tempVal.G = cBuffer[1];
         tempVal.B = cBuffer[2];
 
+        // printf("RGB VAL : %d , %d , %d\n", tempVal.R, tempVal.G, tempVal.B); //Just for debug
         
         return tempVal;
     }

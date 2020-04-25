@@ -3,226 +3,207 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19272B0F24500370003633EF /* CUESDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197F9AC3244C3AE3008F5C1A /* CUESDK.framework */; };
-		197F9AB0244C39D1008F5C1A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 197F9AAF244C39D1008F5C1A /* main.cpp */; };
-		197F9ABE244C3A21008F5C1A /* CorsairWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 197F9ABC244C3A21008F5C1A /* CorsairWrapper.cpp */; };
-		197F9ACA244C3B22008F5C1A /* Bridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 197F9AC8244C3B22008F5C1A /* Bridge.cpp */; };
-		19FC5DFE245002CB00937CFB /* CUESDK.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 197F9AC3244C3AE3008F5C1A /* CUESDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		193D8E292453E9ED004E0AC7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 193D8E272453E9ED004E0AC7 /* main.cpp */; };
+		193D8E2D2453EA21004E0AC7 /* Bridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 193D8E2B2453EA21004E0AC7 /* Bridge.cpp */; };
+		193D8E312453EA46004E0AC7 /* CorsairWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 193D8E2F2453EA46004E0AC7 /* CorsairWrapper.cpp */; };
+		193D8E362453EB11004E0AC7 /* CUESDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 193D8E352453EB11004E0AC7 /* CUESDK.framework */; };
+		193D8E372453EC7D004E0AC7 /* CUESDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 193D8E352453EB11004E0AC7 /* CUESDK.framework */; };
+		193D8E382453EC7D004E0AC7 /* CUESDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 193D8E352453EB11004E0AC7 /* CUESDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		197F9AAA244C39D1008F5C1A /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-		197F9ABA244C39F8008F5C1A /* Embed Frameworks */ = {
+		193D8E392453EC7D004E0AC7 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				193D8E382453EC7D004E0AC7 /* CUESDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		19FC5DFD245002BB00937CFB /* Copy Files */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 11;
-			files = (
-				19FC5DFE245002CB00937CFB /* CUESDK.framework in Copy Files */,
-			);
-			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		19272B1024500A4D003633EF /* AllPheriperalsCPPRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AllPheriperalsCPPRelease.entitlements; sourceTree = "<group>"; };
-		197F9AAC244C39D1008F5C1A /* AllPheriperalsCPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AllPheriperalsCPP; sourceTree = BUILT_PRODUCTS_DIR; };
-		197F9AAF244C39D1008F5C1A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		197F9ABC244C3A21008F5C1A /* CorsairWrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CorsairWrapper.cpp; sourceTree = "<group>"; };
-		197F9ABD244C3A21008F5C1A /* CorsairWrapper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CorsairWrapper.hpp; sourceTree = "<group>"; };
-		197F9AC3244C3AE3008F5C1A /* CUESDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CUESDK.framework; path = AllPheriperalsCPP/Wrappers/CUESDK.framework; sourceTree = SOURCE_ROOT; };
-		197F9AC8244C3B22008F5C1A /* Bridge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bridge.cpp; sourceTree = "<group>"; };
-		197F9AC9244C3B22008F5C1A /* Bridge.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bridge.hpp; sourceTree = "<group>"; };
-		197F9ACB244C445A008F5C1A /* RGBColor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RGBColor.hpp; sourceTree = "<group>"; };
+		193D8E272453E9ED004E0AC7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		193D8E2B2453EA21004E0AC7 /* Bridge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bridge.cpp; sourceTree = "<group>"; };
+		193D8E2C2453EA21004E0AC7 /* Bridge.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bridge.hpp; sourceTree = "<group>"; };
+		193D8E2F2453EA46004E0AC7 /* CorsairWrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CorsairWrapper.cpp; sourceTree = "<group>"; };
+		193D8E302453EA46004E0AC7 /* CorsairWrapper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CorsairWrapper.hpp; sourceTree = "<group>"; };
+		193D8E322453EA63004E0AC7 /* RGBColor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RGBColor.hpp; sourceTree = "<group>"; };
+		193D8E352453EB11004E0AC7 /* CUESDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CUESDK.framework; path = AllPheriperalsCPP/Wrappers/CUESDK.framework; sourceTree = "<group>"; };
+		E7A232C11DC3802F0040C0B9 /* AllPheriperalsCPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AllPheriperalsCPP; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7A232CC1DC3803A0040C0B9 /* CUESDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CUESDK.framework; path = ../../CUESDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		197F9AA9244C39D1008F5C1A /* Frameworks */ = {
+		E7A232BE1DC3802F0040C0B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19272B0F24500370003633EF /* CUESDK.framework in Frameworks */,
+				193D8E362453EB11004E0AC7 /* CUESDK.framework in Frameworks */,
+				193D8E372453EC7D004E0AC7 /* CUESDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		197F9AA3244C39D1008F5C1A = {
+		193D8E2A2453EA0D004E0AC7 /* Networks */ = {
 			isa = PBXGroup;
 			children = (
-				197F9AC3244C3AE3008F5C1A /* CUESDK.framework */,
-				197F9AAE244C39D1008F5C1A /* AllPheriperalsCPP */,
-				197F9AAD244C39D1008F5C1A /* Products */,
+				193D8E2B2453EA21004E0AC7 /* Bridge.cpp */,
+				193D8E2C2453EA21004E0AC7 /* Bridge.hpp */,
 			);
+			path = Networks;
 			sourceTree = "<group>";
 		};
-		197F9AAD244C39D1008F5C1A /* Products */ = {
+		193D8E2E2453EA37004E0AC7 /* Wrappers */ = {
 			isa = PBXGroup;
 			children = (
-				197F9AAC244C39D1008F5C1A /* AllPheriperalsCPP */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		197F9AAE244C39D1008F5C1A /* AllPheriperalsCPP */ = {
-			isa = PBXGroup;
-			children = (
-				19272B1024500A4D003633EF /* AllPheriperalsCPPRelease.entitlements */,
-				197F9AC7244C3B0E008F5C1A /* Networks */,
-				197F9ABB244C3A14008F5C1A /* Wrappers */,
-				197F9AAF244C39D1008F5C1A /* main.cpp */,
-				197F9ACB244C445A008F5C1A /* RGBColor.hpp */,
-			);
-			path = AllPheriperalsCPP;
-			sourceTree = "<group>";
-		};
-		197F9ABB244C3A14008F5C1A /* Wrappers */ = {
-			isa = PBXGroup;
-			children = (
-				197F9ABC244C3A21008F5C1A /* CorsairWrapper.cpp */,
-				197F9ABD244C3A21008F5C1A /* CorsairWrapper.hpp */,
+				193D8E2F2453EA46004E0AC7 /* CorsairWrapper.cpp */,
+				193D8E302453EA46004E0AC7 /* CorsairWrapper.hpp */,
 			);
 			path = Wrappers;
 			sourceTree = "<group>";
 		};
-		197F9AC7244C3B0E008F5C1A /* Networks */ = {
+		E7A232B81DC3802F0040C0B9 = {
 			isa = PBXGroup;
 			children = (
-				197F9AC8244C3B22008F5C1A /* Bridge.cpp */,
-				197F9AC9244C3B22008F5C1A /* Bridge.hpp */,
+				193D8E352453EB11004E0AC7 /* CUESDK.framework */,
+				E7A232C31DC3802F0040C0B9 /* AllPheriperalsCPP */,
+				E7A232C21DC3802F0040C0B9 /* Products */,
+				E7A232CB1DC380390040C0B9 /* Frameworks */,
 			);
-			path = Networks;
+			sourceTree = "<group>";
+		};
+		E7A232C21DC3802F0040C0B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7A232C11DC3802F0040C0B9 /* AllPheriperalsCPP */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7A232C31DC3802F0040C0B9 /* AllPheriperalsCPP */ = {
+			isa = PBXGroup;
+			children = (
+				193D8E2E2453EA37004E0AC7 /* Wrappers */,
+				193D8E2A2453EA0D004E0AC7 /* Networks */,
+				193D8E272453E9ED004E0AC7 /* main.cpp */,
+				193D8E322453EA63004E0AC7 /* RGBColor.hpp */,
+			);
+			path = AllPheriperalsCPP;
+			sourceTree = "<group>";
+		};
+		E7A232CB1DC380390040C0B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7A232CC1DC3803A0040C0B9 /* CUESDK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		197F9AAB244C39D1008F5C1A /* AllPheriperalsCPP */ = {
+		E7A232C01DC3802F0040C0B9 /* AllPheriperalsCPP */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 197F9AB3244C39D1008F5C1A /* Build configuration list for PBXNativeTarget "AllPheriperalsCPP" */;
+			buildConfigurationList = E7A232C81DC3802F0040C0B9 /* Build configuration list for PBXNativeTarget "AllPheriperalsCPP" */;
 			buildPhases = (
-				19FC5DFD245002BB00937CFB /* Copy Files */,
-				197F9AA8244C39D1008F5C1A /* Sources */,
-				197F9AA9244C39D1008F5C1A /* Frameworks */,
-				197F9AAA244C39D1008F5C1A /* CopyFiles */,
-				197F9ABA244C39F8008F5C1A /* Embed Frameworks */,
+				E7A232BD1DC3802F0040C0B9 /* Sources */,
+				E7A232BE1DC3802F0040C0B9 /* Frameworks */,
+				193D8E392453EC7D004E0AC7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = AllPheriperalsCPP;
-			productName = AllPheriperalsCPP;
-			productReference = 197F9AAC244C39D1008F5C1A /* AllPheriperalsCPP */;
+			productName = color_pulse;
+			productReference = E7A232C11DC3802F0040C0B9 /* AllPheriperalsCPP */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		197F9AA4244C39D1008F5C1A /* Project object */ = {
+		E7A232B91DC3802F0040C0B9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = "Isu Kim";
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Corsair Memory, Inc.";
 				TargetAttributes = {
-					197F9AAB244C39D1008F5C1A = {
-						CreatedOnToolsVersion = 11.3.1;
+					E7A232C01DC3802F0040C0B9 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 197F9AA7244C39D1008F5C1A /* Build configuration list for PBXProject "AllPheriperalsCPP" */;
-			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
+			buildConfigurationList = E7A232BC1DC3802F0040C0B9 /* Build configuration list for PBXProject "AllPheriperalsCPP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
-				Base,
 			);
-			mainGroup = 197F9AA3244C39D1008F5C1A;
-			productRefGroup = 197F9AAD244C39D1008F5C1A /* Products */;
+			mainGroup = E7A232B81DC3802F0040C0B9;
+			productRefGroup = E7A232C21DC3802F0040C0B9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				197F9AAB244C39D1008F5C1A /* AllPheriperalsCPP */,
+				E7A232C01DC3802F0040C0B9 /* AllPheriperalsCPP */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		197F9AA8244C39D1008F5C1A /* Sources */ = {
+		E7A232BD1DC3802F0040C0B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				197F9AB0244C39D1008F5C1A /* main.cpp in Sources */,
-				197F9ACA244C3B22008F5C1A /* Bridge.cpp in Sources */,
-				197F9ABE244C3A21008F5C1A /* CorsairWrapper.cpp in Sources */,
+				193D8E312453EA46004E0AC7 /* CorsairWrapper.cpp in Sources */,
+				193D8E2D2453EA21004E0AC7 /* Bridge.cpp in Sources */,
+				193D8E292453E9ED004E0AC7 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		197F9AB1244C39D1008F5C1A /* Debug */ = {
+		E7A232C61DC3802F0040C0B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/../..";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -236,51 +217,42 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
+				LD_RUNPATH_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		197F9AB2244C39D1008F5C1A /* Release */ = {
+		E7A232C71DC3802F0040C0B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/../..";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -288,53 +260,37 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				LD_RUNPATH_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		197F9AB4244C39D1008F5C1A /* Debug */ = {
+		E7A232C91DC3802F0040C0B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5C22LU6YJ2;
-				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/AllPheriperalsCPP",
 					"$(PROJECT_DIR)/AllPheriperalsCPP/Wrappers",
 				);
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/AllPheriperalsCPP",
-					"$(PROJECT_DIR)/AllPheriperalsCPP/Wrappers",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		197F9AB5244C39D1008F5C1A /* Release */ = {
+		E7A232CA1DC3802F0040C0B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = AllPheriperalsCPP/AllPheriperalsCPPRelease.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5C22LU6YJ2;
-				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)/**",
-					"$(EXEC_PATH)/AllPheriperalsCPP/**",
-					"$(PROJECT_DIR)/**",
-					"$(PROJECT_DIR)/AllPheriperalsCPP/**",
-					"$(PROJECT_DIR)/AllPheriperalsCPP/Wrappers/**",
-					"$(EXECUTABLES_FOLDER_PATH)/**",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/AllPheriperalsCPP/Wrappers",
 				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -342,25 +298,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		197F9AA7244C39D1008F5C1A /* Build configuration list for PBXProject "AllPheriperalsCPP" */ = {
+		E7A232BC1DC3802F0040C0B9 /* Build configuration list for PBXProject "AllPheriperalsCPP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				197F9AB1244C39D1008F5C1A /* Debug */,
-				197F9AB2244C39D1008F5C1A /* Release */,
+				E7A232C61DC3802F0040C0B9 /* Debug */,
+				E7A232C71DC3802F0040C0B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		197F9AB3244C39D1008F5C1A /* Build configuration list for PBXNativeTarget "AllPheriperalsCPP" */ = {
+		E7A232C81DC3802F0040C0B9 /* Build configuration list for PBXNativeTarget "AllPheriperalsCPP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				197F9AB4244C39D1008F5C1A /* Debug */,
-				197F9AB5244C39D1008F5C1A /* Release */,
+				E7A232C91DC3802F0040C0B9 /* Debug */,
+				E7A232CA1DC3802F0040C0B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 197F9AA4244C39D1008F5C1A /* Project object */;
+	rootObject = E7A232B91DC3802F0040C0B9 /* Project object */;
 }

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:AllPheriperalsCPP.xcodeproj">
+      location = "self:/Users/gim-isu/Downloads/color_pulse/AllPheriperalsCPP.xcodeproj">
    </FileRef>
 </Workspace>

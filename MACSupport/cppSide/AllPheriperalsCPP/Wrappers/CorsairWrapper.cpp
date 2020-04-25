@@ -66,7 +66,10 @@ public:
     void SetDeviceInfo(CorsairInfo* DevInfo){
         DeviceCount = CorsairGetDeviceCount(); // Getting total number of counts of devices
         if (DeviceCount == 0) std::cout << "[Corsair] No Connected Corsair Devices" << std::endl;
-        else if  (DeviceCount == -1) std::cout << "[Corsair] ICUE SDK Error" << std::endl;
+        else if  (DeviceCount == -1) {
+            std::cout << "[Corsair] ICUE SDK Error" << std::endl;
+            std::cout << "[Corsair] Please check if ICUE is running or you have enabled SDK option" << std::endl;
+        }
         else std::cout << "[Corsair] Total Connected  Devices : " << DeviceCount << endl;
 
         for (int i = 0 ; i < DeviceCount ; i++){ // For save the information to the structure.
