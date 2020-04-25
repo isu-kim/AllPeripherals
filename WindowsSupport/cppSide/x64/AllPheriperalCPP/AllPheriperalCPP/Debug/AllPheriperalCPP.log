@@ -1,0 +1,11 @@
+﻿  main.cpp
+C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\include\CUESDK.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  WARNING: CUESDK deprecation warnings were disabled
+main.obj : error LNK2019: __imp__CorsairSetLedsColorsBufferByDeviceIndex 외부 기호(참조 위치: "public: void __thiscall Corsair::SetEtcColors(struct _rgbvals)" (?SetEtcColors@Corsair@@QAEXU_rgbvals@@@Z) 함수)에서 확인하지 못했습니다.
+main.obj : error LNK2019: __imp__CorsairSetLedsColorsFlushBuffer 외부 기호(참조 위치: "public: void __thiscall Corsair::SetEtcColors(struct _rgbvals)" (?SetEtcColors@Corsair@@QAEXU_rgbvals@@@Z) 함수)에서 확인하지 못했습니다.
+main.obj : error LNK2019: __imp__CorsairGetDeviceCount 외부 기호(참조 위치: "public: void __thiscall Corsair::SetDeviceInfo(struct CorsairInfo *)" (?SetDeviceInfo@Corsair@@QAEXPAUCorsairInfo@@@Z) 함수)에서 확인하지 못했습니다.
+main.obj : error LNK2019: __imp__CorsairGetDeviceInfo 외부 기호(참조 위치: "public: void __thiscall Corsair::SetDeviceInfo(struct CorsairInfo *)" (?SetDeviceInfo@Corsair@@QAEXPAUCorsairInfo@@@Z) 함수)에서 확인하지 못했습니다.
+main.obj : error LNK2019: __imp__CorsairRequestControl 외부 기호(참조 위치: "public: __thiscall Corsair::Corsair(void)" (??0Corsair@@QAE@XZ) 함수)에서 확인하지 못했습니다.
+main.obj : error LNK2019: __imp__CorsairPerformProtocolHandshake 외부 기호(참조 위치: "public: __thiscall Corsair::Corsair(void)" (??0Corsair@@QAE@XZ) 함수)에서 확인하지 못했습니다.
+C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\lib\x64\CUESDK.x64_2017.lib : warning LNK4272: 'x64' 라이브러리 컴퓨터 종류가 'x86' 대상 컴퓨터 종류와 충돌합니다.
+C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\AllPheriperalCPP\Debug\AllPheriperalCPP.exe : fatal error LNK1120: 6개의 확인할 수 없는 외부 참조입니다.
