@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>CUESDK</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.corsair.cuesdk</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>CUESDK</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>3.0.301</string>
+	<key>CFBundleVersion</key>
+	<string>3.0.301</string>
+	<key>CFBundleGetInfoString</key>
+	<string>CUE Direct Lighting Control SDK</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<dict>
+		<key>Item 0</key>
+		<string>MacOSX</string>
+	</dict>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2018 Corsair Memory Inc. All rights reserved.</string>
+</dict>
+</plist>
