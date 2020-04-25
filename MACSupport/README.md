@@ -1,3 +1,4 @@
+
 ## Mac Support
 I am personally a huge fan of apple. Those are Mac devices that I own personally. Just to let you know.
 
@@ -95,7 +96,8 @@ This Installation guide is for developers who would like to modify or make use o
 
 **Function Documents and Code structures**
 
-I would be uploading function documents and code structures in the link below!
+I would be uploading function documents and code structures in the link here!
+[https://github.com/gooday2die/AllPeripherals/blob/master/MACSupport/DocumentsForDevs.md](https://github.com/gooday2die/AllPeripherals/blob/master/MACSupport/DocumentsForDevs.md)
 
 
 **Again...**
