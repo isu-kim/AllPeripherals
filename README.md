@@ -1,8 +1,4 @@
-
-
-
-
-# ## AllPeripheral
+## AllPeripheral
 A program written in C++ and Python for synchronizing all SDKs with one program. Supports Windows and MacOS.
 
 ## Basic Info 
