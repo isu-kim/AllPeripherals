@@ -66,7 +66,7 @@ public:
     void getOperationMode(void){
         int buffer[1];
         recv(clientsock, buffer, 1, 0);
-        //buffer[0] = buffer[0] - 32512; // For Release Version. It's kind of odd...
+        buffer[0] = buffer[0] - 32512; // For Release Version. It's kind of odd...
         
         std::cout << "[Server] Received Operating Mode : " << buffer[0] << std::endl;
         std::cout << "[Server] The operating mode would be : ";

@@ -389,7 +389,7 @@ public:
     /// would not be asked to set LED to specific color. Please check documentation more.
     void MakeSetAllLedFunction(void){
         SetLedFunctionPointerArray = (SetLedFunctionPointer*)malloc(sizeof(SetLedFunctionPointer) * 6);
-        for (char i = 0 ; i < 6 ; i ++) SetLedFunctionPointerArray[i] = &Corsair::UseLessFunction;
+        for (char i = 0 ; i < 6 ; i ++) SetLedFunctionPointerArray[i] = &Corsair::UselessFunction;
             
             /*
         if(Connected.Headset) {SetLedFunctionPointerArray[0] = &Corsair::SetHeadsetColors; std::cout << "[DEBUG] headset is set in FP array" << std::endl; }
@@ -437,7 +437,7 @@ public:
     /// If the function pointer is initialized as NULL pointer, and leter called by SetAllColor function,
     /// it causes Segmentation fault due to undefined behavior. So I made a padding function for safe use.
     /// @param useless just parameter for matching the function pointers.
-    void UseLessFunction(RGBVAL useless){
+    void UselessFunction(RGBVAL useless){
         return; // This function literally does nothing.
     }
     
