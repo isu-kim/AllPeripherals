@@ -66,6 +66,8 @@ None yet. However, those following devices would be supported for sure.
  - Corsair K95 RGB Platinum [ICUE SDK]
  - Corsair MM800 RGB [ICUE SDK]
  - Corsair Void RGB Pro [ICUE SDK]
+ - Corsair NightSword RGB (Checked by Christopher Dillard)
+ - Corsair K57 RGB WIRELESS (Checked by Christopher Dillard)
  - ~~RTX 2080 TI MSI  Gaming X Trio[Mystic Light]~~ I gave up.
 
 
