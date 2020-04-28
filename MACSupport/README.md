@@ -13,12 +13,18 @@ I did not think those peripheral device companies would support any MacOS suppor
  - Corsair - ICUE SDK. Fully working on 10.15
  - RAZER - Working on it. Would not work above 10.15 (Catalina)
 
+**Currently Supported Mac Devices**
+- MacBook Pro "15 TouchBar 2018 CTO - 10.15
+- iMac - 10.15  (By Christopher Dillard)
+
 **Confirmed Working Devices**
 
  - Corsair K95 RGB Platinum 
  - Corsair Glaive RGB Pro
  - Corsair MM800 RGB Pro
  - Corsair VOID RGB Pro
+ - Corsair NightSword RGB (By Christopher Dillard)
+- Corsair K57 RGB WIRELESS (By Christopher Dillard)
 
 ## Installation Guide - For Normal Users
 In order to run this program, you should have Python3 (I would suggest you using Python 3.7.x) installed in your Mac. Nowadays there is a default python installed in your MacOS which is 2.7.x version. However, the version is **NOT** compatible with my program. Also there are several dependency modules and libraries for this script to work. 

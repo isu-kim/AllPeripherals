@@ -170,6 +170,7 @@ public:
                 }
             }
         if(NONEEDTOSAVERAM){
+            //std::cout << "[DEBUG] NONEEDTOSAVEMYRAM is on" << std::endl;
             if (!Connected.MouseMat) AssignMouseMatLedArrays();
             if (!Connected.Mouse) AssignMouseLedArrays();
             if (!Connected.Headset) AssignHeadsetLedArrays();
@@ -227,8 +228,11 @@ public:
     /// @param Value The RGBVAL type of data to set color as
 
     void SetHeadsetColors(RGBVAL Value){
-    //void SetHeadsetColors(int R, int G, int B){
-        for (int i = 0 ; i < 2 ; i++){
+        //void SetHeadsetColors(int R, int G, int B){
+        //std::cout << "[DEBUG] called SetHeadsetColors" << std::endl;
+
+        for (int i = 0 ; i < 3 ; i++){
+            //std::cout << "[DEBUG] Iter " << int(i) << std::endl;
             LedArray.Headset[i].r = Value.R;
             LedArray.Headset[i].g = Value.G;
             LedArray.Headset[i].b = Value.B;
@@ -241,9 +245,11 @@ public:
     /// A function that sets all LEDs of Corsair Keyboard to a specific LED value.
     /// @param Value The RGBVAL type of data to set color as
     void SetKeyboardColors(RGBVAL Value){
-    //void SetKeyboardColors(int R, int G, int B){
+        //void SetKeyboardColors(int R, int G, int B){
+        //std::cout << "[DEBUG] called SetKeyboardColors" << std::endl;
 
         for (int i = 0 ; i < 167 ; i++){
+            //std::cout << "[DEBUG] Iter " << int(i) << std::endl;
             LedArray.Keyboard[i].r = Value.R;
             LedArray.Keyboard[i].g = Value.G;
             LedArray.Keyboard[i].b = Value.B;
@@ -258,9 +264,11 @@ public:
     /// @param Value The RGBVAL type of data to set color as
 
     void SetMouseColors(RGBVAL Value){
-    //void SetMouseColors(int R, int G, int B){
+        //void SetMouseColors(int R, int G, int B){
+        //std::cout << "[DEBUG] called SetMouseColors" << std::endl;
 
         for (int i = 0 ; i < 4 ; i++){
+            //std::cout << "[DEBUG] Iter " << int(i) << std::endl;
             LedArray.Mouse[i].r = Value.R;
             LedArray.Mouse[i].g = Value.G;
             LedArray.Mouse[i].b = Value.B;
@@ -275,9 +283,12 @@ public:
     /// @param Value The RGBVAL type of data to set color as
 
     void SetHeadSetStandColors(RGBVAL Value){
-    //void SetHeadSetStandColors(int R, int G, int B){
+        //void SetHeadSetStandColors(int R, int G, int B){
+        //std::cout << "[DEBUG] called SetHeadSetStandColors" << std::endl;
 
+        
         for (int i = 0 ; i < 9 ; i++){
+            //std::cout << "[DEBUG] Iter " << int(i) << std::endl;
             LedArray.HeadsetStand[i].r = Value.R;
             LedArray.HeadsetStand[i].g = Value.G;
             LedArray.HeadsetStand[i].b = Value.B;
@@ -292,9 +303,11 @@ public:
     /// @param Value The RGBVAL type of data to set color as
 
     void SetMouseMatColors(RGBVAL Value){
-    //void SetMouseMatColors(int R, int G, int B){
+        //void SetMouseMatColors(int R, int G, int B){
+        //std::cout << "[DEBUG] called SetEtcColors" << std::endl;
 
         for (int i = 0 ; i < 15 ; i++){
+            //std::cout << "[DEBUG] Iter " << int(i) << std::endl;
             LedArray.MouseMat[i].r = Value.R;
             LedArray.MouseMat[i].g = Value.G;
             LedArray.MouseMat[i].b = Value.B;
@@ -308,8 +321,11 @@ public:
     /// @param Value The RGBVAL type of data to set color as
 
     void SetEtcColors(RGBVAL Value){
-    //void SetEtcColors(int R, int G, int B){
+        //void SetEtcColors(int R, int G, int B){
+        //std::cout << "[DEBUG] called SetEtcColors" << std::endl;
+
         for (int i = 0 ; i < 730 ; i++){
+            //std::cout << "[DEBUG] Iter " << int(i) << std::endl;
             LedArray.Etc[i].r = Value.R;
             LedArray.Etc[i].g = Value.G;
             LedArray.Etc[i].b = Value.B;
@@ -339,7 +355,7 @@ public:
     }
     /// A function that sets all headset enum ids.
     void AssignHeadsetLedArrays(void){
-        LedArray.Headset = (CorsairLedColor*)malloc(sizeof(CorsairLedColor) * 2);
+        LedArray.Headset = (CorsairLedColor*)malloc(sizeof(CorsairLedColor) * 3);
         for (int i = 0 ; i < 2 ; i++) LedArray.Headset[i].ledId = static_cast<CorsairLedId>(i + 152);
         return;
     }
@@ -371,21 +387,58 @@ public:
     /// For Example, if we have only Mouse, then we will get only SetMouseColor function's address to our function pointer array.
     /// After running SetAllLedColor, the function will just run SetMouseColor. Which means that any unecessary or unconnected devices
     /// would not be asked to set LED to specific color. Please check documentation more.
-        void MakeSetAllLedFunction(void){
-
+    void MakeSetAllLedFunction(void){
         SetLedFunctionPointerArray = (SetLedFunctionPointer*)malloc(sizeof(SetLedFunctionPointer) * 6);
-        
-        if(Connected.Headset) SetLedFunctionPointerArray[0] = &Corsair::SetHeadsetColors;
-        if(Connected.Mouse) SetLedFunctionPointerArray[1] = &Corsair::SetMouseColors;
-        if(Connected.Keyboard) SetLedFunctionPointerArray[2] = &Corsair::SetKeyboardColors;
-        if(Connected.MouseMat) SetLedFunctionPointerArray[3] = &Corsair::SetMouseMatColors;
-        if(Connected.HeadsetStand) SetLedFunctionPointerArray[4] = &Corsair::SetHeadSetStandColors;
-        if(Connected.Etc) SetLedFunctionPointerArray[5] = &Corsair::SetEtcColors;
-        //Storing bunch of member function pointers to the pointer array.
-        
-        DevInfo.TotalFunctionPointerCounts = Connected.HeadsetStand + Connected.Etc + Connected.Headset + Connected.Keyboard + Connected.Mouse + Connected.MouseMat;
-        //TotalFunctionPointerCounts would be used to check how many times to iterate when performing SetAllLedColor function below.
-        return;
+        for (char i = 0 ; i < 6 ; i ++) SetLedFunctionPointerArray[i] = &Corsair::UselessFunction;
+            
+            /*
+        if(Connected.Headset) {SetLedFunctionPointerArray[0] = &Corsair::SetHeadsetColors; std::cout << "[DEBUG] headset is set in FP array" << std::endl; }
+        if(Connected.Mouse) {SetLedFunctionPointerArray[1] = &Corsair::SetMouseColors; std::cout << "[DEBUG] mouse is set FP array" << std::endl; }
+        if(Connected.Keyboard) {SetLedFunctionPointerArray[2] = &Corsair::SetKeyboardColors; std::cout << "[DEBUG] keyboard is set FP array" << std::endl;}
+        if(Connected.MouseMat) {SetLedFunctionPointerArray[3] = &Corsair::SetMouseMatColors; std::cout << "[DEBUG] mousemat is set FP array" << std::endl;}
+        if(Connected.HeadsetStand) {SetLedFunctionPointerArray[4] = &Corsair::SetHeadSetStandColors; std::cout << "[DEBUG] headsetstand is set FP array" << std::endl;}
+        if(Connected.Etc) {SetLedFunctionPointerArray[5] = &Corsair::SetEtcColors; std::cout << "[DEBUG] etc is set FP array" << std::endl;}
+            */
+            
+        if(Connected.Headset) {
+            SetLedFunctionPointerArray[0] = &Corsair::SetHeadsetColors;
+            //std::cout << "[DEBUG] headset is set in FP array" << std::endl;
+        }
+        if(Connected.Mouse) {
+            SetLedFunctionPointerArray[1] = &Corsair::SetMouseColors;
+            //std::cout << "[DEBUG] mouse is set FP array" << std::endl;
+            
+        }
+        if(Connected.Keyboard){
+            SetLedFunctionPointerArray[2] = &Corsair::SetKeyboardColors;
+            //std::cout << "[DEBUG] keyboard is set FP array" << std::endl;
+        }
+        if(Connected.MouseMat){
+            SetLedFunctionPointerArray[3] = &Corsair::SetMouseMatColors;
+            //std::cout << "[DEBUG] mousemat is set FP array" << std::endl;
+        }
+        if(Connected.HeadsetStand){
+            SetLedFunctionPointerArray[4] = &Corsair::SetHeadSetStandColors;
+            //std::cout << "[DEBUG] headsetstand is set FP array" << std::endl;
+        }
+        if(Connected.Etc){
+            SetLedFunctionPointerArray[5] = &Corsair::SetEtcColors;
+            //std::cout << "[DEBUG] etc is set FP array" << std::endl;
+        }
+            
+    //Storing bunch of member function pointers to the pointer array.
+    
+    DevInfo.TotalFunctionPointerCounts = Connected.HeadsetStand + Connected.Etc + Connected.Headset + Connected.Keyboard + Connected.Mouse + Connected.MouseMat;
+    //TotalFunctionPointerCounts would be used to check how many times to iterate when performing SetAllLedColor function below.
+    return;
+    }
+    
+    /// A function that is for save use of function pointers up there.
+    /// If the function pointer is initialized as NULL pointer, and leter called by SetAllColor function,
+    /// it causes Segmentation fault due to undefined behavior. So I made a padding function for safe use.
+    /// @param useless just parameter for matching the function pointers.
+    void UselessFunction(RGBVAL useless){
+        return; // This function literally does nothing.
     }
     
     /// A Function that sets all Corsair's devices into one color.
@@ -393,8 +446,9 @@ public:
     /// @param Value The RGBVAL type of data to set color as
 
     void SetAllLedColor(RGBVAL Value){
+    //std::cout << "[DEBUG] called SetAllLedColor" << std::endl;
     //void SetAllLedColor(int R, int G, int B){
-        for(int i = 0 ; i < DevInfo.TotalFunctionPointerCounts ; i++){
+        for(int i = 0 ; i < 6 ; i++){ // I have changed this part so that it can be a bit more stable.
             (this->*SetLedFunctionPointerArray[i])(Value);
             //(this->*SetLedFunctionPointerArray[i])(R,G,B);
         }
