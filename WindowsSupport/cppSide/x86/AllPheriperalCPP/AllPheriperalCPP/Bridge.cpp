@@ -20,8 +20,9 @@ public:
 	SOCKADDR_IN tListenAddr = {};
 	SOCKADDR_IN tCIntAddr = {};
 	RGBVAL BeforeColor;
-	int operationMode = -1;
 
+	int operationMode = -1;
+	int Speed = 0;
 
 	/*
 	RGBVAL receive4ByteData(void);
@@ -83,6 +84,18 @@ public:
 		return;
 	}
 
+	int getSpeed(void) {
+		char cBuffer;
+
+		recv(hClient, &cBuffer, 4, 0);
+		
+		Speed = (int)cBuffer;
+
+		std::cout << (int)Speed << std::endl;
+
+		return (int)cBuffer;
+	}
+
 	void getOperationMode(void){
 		/**
 		A member function for receiving which operation mode would be using.
@@ -92,7 +105,7 @@ public:
 		Mode -1 : Error state. Ends the program.
 		Mode 1 : Sync into just one color.
 		More to be added.
-
+		    
 		@param {void}
 		@return {int} the mode that this program would be ran.
 		*/

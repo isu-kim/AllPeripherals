@@ -87,12 +87,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\WindowsSupport\cppSide\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\include;C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\WindowsSupport\cppSide\x86\AllPheriperalCPP\AllPheriperalCPP\Library\ChromaSDK\inc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x86\AllPheriperalCPP\AllPheriperalCPP\Library\ChromaSDK\inc;C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\include;C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\WindowsSupport\cppSide\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\lib\i386</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\lib\i386;C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\lib\i386;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>CUESDK_2017.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -102,13 +102,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\WindowsSupport\x86\AllPheriperalCPP\AllPheriperalCPP\Library\ChromaSDK\inc;C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\WindowsSupport\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x64\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\include;C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x64\AllPheriperalCPP\AllPheriperalCPP\Library\ChromaSDK\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\WindowsSupport\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\lib\i386;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>CUESDK_2017.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x64\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>CUESDK.x64_2017.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -119,14 +119,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\WindowsSupport\cppSide\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\include;C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\WindowsSupport\cppSide\x86\AllPheriperalCPP\AllPheriperalCPP\Library\ChromaSDK\inc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x86\AllPheriperalCPP\AllPheriperalCPP\Library\ChromaSDK\inc;C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\WindowsSupport\cppSide\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\lib\i386</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\lib\i386;</AdditionalLibraryDirectories>
       <AdditionalDependencies>CUESDK_2017.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -138,15 +138,15 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\WindowsSupport\x86\AllPheriperalCPP\AllPheriperalCPP\Library\ChromaSDK\inc;C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\WindowsSupport\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x64\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\include;C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x64\AllPheriperalCPP\AllPheriperalCPP\Library\ChromaSDK\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\WindowsSupport\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\lib\i386;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>CUESDK_2017.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x64\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>CUESDK.x64_2017.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -154,12 +154,17 @@
     <ClCompile Include="CorsairWrapper.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="RazerWrapper.cpp" />
+    <ClCompile Include="RainbowAll.cpp" />
+    <ClCompile Include="Wrapper.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bridge.hpp" />
     <ClInclude Include="CorsairWrapper.hpp" />
+    <ClInclude Include="main.hpp" />
+    <ClInclude Include="RainbowAll.hpp" />
     <ClInclude Include="RazerWrapper.hpp" />
     <ClInclude Include="RGBColor.hpp" />
+    <ClInclude Include="Wrapper.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

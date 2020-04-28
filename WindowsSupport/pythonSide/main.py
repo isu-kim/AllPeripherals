@@ -59,7 +59,7 @@ def parse_argv():
 
     easter_egg_param = bool()
     operation_mode_param = int()
-    speed_param = float()
+    speed_param = int()
 
     if len(argv_list) < 2:  # When we do not have any params
         pass
@@ -153,7 +153,7 @@ if __name__ == "__main__":
             print("[OperationMode] Set Operation Mode 2 : Rainbow All")
             while True:  # This part is for error and exception detection.
                 try:
-                    speed = float(input("Speed (default 0.005) : "))
+                    speed = int(input("Speed (default 10) : "))
                     break
 
                 except ValueError:  # if someone types 12swergw as input...

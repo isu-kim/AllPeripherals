@@ -14,3 +14,12 @@
 #else
 #define CHROMASDKDLL        _T("RzChromaSDK.dll")
 #endif
+
+struct RazerConnectedDeviceBool {
+    bool Keyboard;
+    bool Mouse;
+    bool Headset;
+    bool MouseMat;
+    bool Keypads;
+    bool Etc;
+};

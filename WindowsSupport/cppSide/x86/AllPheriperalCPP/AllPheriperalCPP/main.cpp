@@ -1,9 +1,4 @@
-﻿#include <iostream>
-#include <stdlib.h>
-#include <Windows.h>
-#include "CorsairWrapper.cpp"
-#include "RazerWrapper.cpp"
-#include "Bridge.cpp"
+﻿#include "main.hpp"
 
 //
 //  main.cpp
@@ -18,14 +13,13 @@
 /// The parameter CorsairObj would be later changed to some other class for all integration.
 /// @param CorsairObj The Corsair type object to use.
 /// @param BridgeObj The ConnectionBride type object to use.
-void SyncAllColors(Corsair CorsairObj, Razer RazerObj, ConnectrionBridge BridgeObj) {
+void SyncAllColors(Wrapper WrapperObj, ConnectrionBridge BridgeObj) {
     std::cout << "[Server] Now syncing all colors" << std::endl;
 
     while (1) {
         RGBVAL tempVal = BridgeObj.getRGBValues();
         if (BridgeObj.isDifferentColor(tempVal)) {
-            CorsairObj.SetAllLedColor(tempVal);
-            RazerObj.SetAllColor(tempVal);
+            WrapperObj.SetAllLedColor(tempVal);
         }
     }
     return;
@@ -33,7 +27,7 @@ void SyncAllColors(Corsair CorsairObj, Razer RazerObj, ConnectrionBridge BridgeO
 
 /// Our Friendly GUI function that prints our logo in ascii-art!
 void PrintTitle(void) {
-    std::cout << "                                                                             Windows 32bit C++ Side Program" << std::endl;
+    std::cout << "                                                                             Windows 64bit C++ Side Program" << std::endl;
     std::cout << "                                                                                              by Gooday2die" << std::endl;
     std::cout << "                                       Please Check My Github : https://github.com/gooday2dieAllPeripherals" << std::endl;
 
@@ -44,22 +38,22 @@ void PrintTitle(void) {
 /// @param argv This one also.
 int main(int argc, const char* argv[]) {
     PrintTitle();
-    Corsair CorsairObj = Corsair();
-    Razer RazerObj = Razer(0, 0);
-    ConnectrionBridge BridgeObj = ConnectrionBridge();
 
+    Wrapper WrapperObj = Wrapper();
+    ConnectrionBridge BridgeObj = ConnectrionBridge();
 
     switch (BridgeObj.operationMode) {
     case 1:
         std::cout << "[Server] Received Mode 1 : Screen Reactive" << std::endl;
-        SyncAllColors(CorsairObj, RazerObj, BridgeObj);
+        SyncAllColors(WrapperObj, BridgeObj);
         break;
 
     case 2:
         std::cout << "[Server] Received Mode 2 : Rainbow All" << std::endl;
-        SyncAllColors(CorsairObj, RazerObj, BridgeObj);
+        RainbowAllEffect(WrapperObj, BridgeObj);
     default:
         break;
     }
     return 0;
+
 }

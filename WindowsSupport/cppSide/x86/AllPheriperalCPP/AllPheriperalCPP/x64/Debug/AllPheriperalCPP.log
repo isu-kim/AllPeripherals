@@ -1,19 +1,8 @@
 ﻿  Bridge.cpp
-C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\WindowsSupport\x86\AllPheriperalCPP\AllPheriperalCPP\Bridge.cpp(144,1): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  CorsairWrapper.cpp
-C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\WindowsSupport\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\include\CUESDK.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x64\AllPheriperalCPP\AllPheriperalCPP\Bridge.cpp(157,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  RainbowAll.cpp
+C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x64\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\include\CUESDK.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
   WARNING: CUESDK deprecation warnings were disabled
-  main.cpp
-C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\WindowsSupport\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\include\CUESDK.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  WARNING: CUESDK deprecation warnings were disabled
-C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\WindowsSupport\x86\AllPheriperalCPP\AllPheriperalCPP\Bridge.cpp(144,1): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  RazerWrapper.cpp
-  코드를 생성하고 있습니다...
-main.obj : error LNK2019: __imp_CorsairSetLedsColorsBufferByDeviceIndex 외부 기호(참조 위치: "public: void __cdecl Corsair::SetEtcColors(struct _rgbvals)" (?SetEtcColors@Corsair@@QEAAXU_rgbvals@@@Z) 함수)에서 확인하지 못했습니다.
-main.obj : error LNK2019: __imp_CorsairSetLedsColorsFlushBuffer 외부 기호(참조 위치: "public: void __cdecl Corsair::SetEtcColors(struct _rgbvals)" (?SetEtcColors@Corsair@@QEAAXU_rgbvals@@@Z) 함수)에서 확인하지 못했습니다.
-main.obj : error LNK2019: __imp_CorsairGetDeviceCount 외부 기호(참조 위치: "public: void __cdecl Corsair::SetDeviceInfo(struct CorsairInfo *)" (?SetDeviceInfo@Corsair@@QEAAXPEAUCorsairInfo@@@Z) 함수)에서 확인하지 못했습니다.
-main.obj : error LNK2019: __imp_CorsairGetDeviceInfo 외부 기호(참조 위치: "public: void __cdecl Corsair::SetDeviceInfo(struct CorsairInfo *)" (?SetDeviceInfo@Corsair@@QEAAXPEAUCorsairInfo@@@Z) 함수)에서 확인하지 못했습니다.
-main.obj : error LNK2019: __imp_CorsairRequestControl 외부 기호(참조 위치: "public: __cdecl Corsair::Corsair(void)" (??0Corsair@@QEAA@XZ) 함수)에서 확인하지 못했습니다.
-main.obj : error LNK2019: __imp_CorsairPerformProtocolHandshake 외부 기호(참조 위치: "public: __cdecl Corsair::Corsair(void)" (??0Corsair@@QEAA@XZ) 함수)에서 확인하지 못했습니다.
-C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\WindowsSupport\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\lib\i386\CUESDK_2017.lib : warning LNK4272: 'x86' 라이브러리 컴퓨터 종류가 'x64' 대상 컴퓨터 종류와 충돌합니다.
-C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\WindowsSupport\x86\AllPheriperalCPP\x64\Debug\AllPheriperalCPP.exe : fatal error LNK1120: 6개의 확인할 수 없는 외부 참조입니다.
+C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x64\AllPheriperalCPP\AllPheriperalCPP\Bridge.cpp(157,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  AllPheriperalCPP.vcxproj -> C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x64\AllPheriperalCPP\x64\Debug\AllPheriperalCPP.exe

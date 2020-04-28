@@ -70,7 +70,7 @@ public:
             std::cout << "[Corsair] ICUE SDK Error" << std::endl;
             std::cout << "[Corsair] Please check if ICUE is running or you have enabled SDK option" << std::endl;
         }
-        else std::cout << "[Corsair] Total Connected  Devices : " << DeviceCount << endl;
+        else std::cout << "[Corsair] Total Connected Devices : " << DeviceCount << endl;
 
         for (int i = 0; i < DeviceCount; i++) { // For save the information to the structure.
             CorsairDeviceInfo* tempDevInfo = CorsairGetDeviceInfo(i);
@@ -374,6 +374,7 @@ public:
     void MakeSetAllLedFunction(void) {
 
         SetLedFunctionPointerArray = (SetLedFunctionPointer*)malloc(sizeof(SetLedFunctionPointer) * 6);
+        for (char i = 0; i < 6; i++) SetLedFunctionPointerArray[i] = &Corsair::UselessFunction;
 
         if (Connected.Headset) SetLedFunctionPointerArray[0] = &Corsair::SetHeadsetColors;
         if (Connected.Mouse) SetLedFunctionPointerArray[1] = &Corsair::SetMouseColors;
@@ -385,6 +386,14 @@ public:
 
         DevInfo.TotalFunctionPointerCounts = Connected.HeadsetStand + Connected.Etc + Connected.Headset + Connected.Keyboard + Connected.Mouse + Connected.MouseMat;
         //TotalFunctionPointerCounts would be used to check how many times to iterate when performing SetAllLedColor function below.
+        return;
+    }
+
+    /// A function that is for save use of function pointers up there.
+    /// If the function pointer is initialized as NULL pointer, and leter called by SetAllColor function,
+    /// it causes Segmentation fault due to undefined behavior. So I made a padding function for safe use.
+    /// @param useless just parameter for matching the function pointers.    
+    void UselessFunction(RGBVAL useless) {
         return;
     }
 

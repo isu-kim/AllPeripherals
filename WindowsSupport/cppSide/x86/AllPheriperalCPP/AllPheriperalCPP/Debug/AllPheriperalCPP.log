@@ -1,10 +1,4 @@
-﻿  Bridge.cpp
-  CorsairWrapper.cpp
-C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\WindowsSupport\cppSide\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\include\CUESDK.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+﻿  CorsairWrapper.cpp
+C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\include\CUESDK.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
   WARNING: CUESDK deprecation warnings were disabled
-  main.cpp
-C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\WindowsSupport\cppSide\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\include\CUESDK.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  WARNING: CUESDK deprecation warnings were disabled
-  RazerWrapper.cpp
-  코드를 생성하고 있습니다...
-  AllPheriperalCPP.vcxproj -> C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\WindowsSupport\cppSide\x86\AllPheriperalCPP\Debug\AllPheriperalCPP.exe
+  AllPheriperalCPP.vcxproj -> C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x86\AllPheriperalCPP\Debug\AllPheriperalCPP.exe

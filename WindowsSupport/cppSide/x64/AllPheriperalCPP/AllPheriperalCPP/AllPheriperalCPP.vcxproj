@@ -151,12 +151,17 @@
     <ClCompile Include="CorsairWrapper.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="RazerWrapper.cpp" />
+    <ClCompile Include="RainbowAll.cpp" />
+    <ClCompile Include="Wrapper.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bridge.hpp" />
     <ClInclude Include="CorsairWrapper.hpp" />
+    <ClInclude Include="main.hpp" />
+    <ClInclude Include="RainbowAll.hpp" />
     <ClInclude Include="RazerWrapper.hpp" />
     <ClInclude Include="RGBColor.hpp" />
+    <ClInclude Include="Wrapper.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

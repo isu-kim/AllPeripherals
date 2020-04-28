@@ -19,6 +19,9 @@
     <Filter Include="소스 파일\Networks">
       <UniqueIdentifier>{34c09cb7-89a8-4caf-a59d-da3e31ae6f48}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Effects">
+      <UniqueIdentifier>{3a11b3dc-fa30-47d8-9720-b92cbe3a62b1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -31,6 +34,12 @@
       <Filter>소스 파일\Networks</Filter>
     </ClCompile>
     <ClCompile Include="RazerWrapper.cpp">
+      <Filter>소스 파일\Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="RainbowAll.cpp">
+      <Filter>소스 파일\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Wrapper.cpp">
       <Filter>소스 파일\Wrappers</Filter>
     </ClCompile>
   </ItemGroup>
@@ -46,6 +55,15 @@
     </ClInclude>
     <ClInclude Include="RazerWrapper.hpp">
       <Filter>소스 파일\Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="RainbowAll.hpp">
+      <Filter>소스 파일\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Wrapper.hpp">
+      <Filter>소스 파일\Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="main.hpp">
+      <Filter>소스 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
