@@ -95,6 +95,9 @@ Screen Reactive Demo #3 Blood
 
 I would be mainly focusing on this project, AllPeripherals. However, I am not planning to drop the previous project. It is my one of most loved project and still would like to develop much more. 
 
+## Updatelog
+You can check updatelog [Here]([https://github.com/gooday2die/AllPeripherals/blob/master/Updatelog.md])(https://github.com/gooday2die/AllPeripherals/blob/master/Updatelog.md)
+
 ## ETC
 I do know that there would be bugs and unsupported devices. However, I will be trying very hard to keep those as minimum. If you happen to visit this repository, feel free to suggest some ideas for this project. Also, contributions are always welcomed. If you want to be a contributor, just contact me  edina00@naver.com. 
 
