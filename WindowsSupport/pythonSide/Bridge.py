@@ -74,8 +74,6 @@ class Bridge():
         """
         send_byte = bytearray()
         send_byte.append(speed)
-        print(send_byte)
-        print(str(speed))
         
         try:
             self.client_sock.send(send_byte)

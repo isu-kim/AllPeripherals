@@ -92,7 +92,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\lib\i386;C:\Users\FlagShipPC\Desktop\AllPheriperalCPP\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\lib\i386;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\lib\i386;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>CUESDK_2017.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -126,7 +126,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\lib\i386;</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\lib\i386;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>CUESDK_2017.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>

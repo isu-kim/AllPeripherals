@@ -22,7 +22,7 @@ public:
 	RGBVAL BeforeColor;
 
 	int operationMode = -1;
-	int Speed = 0;
+	//int Speed = 0;
 
 	/*
 	RGBVAL receive4ByteData(void);
@@ -75,7 +75,9 @@ public:
 		}
 
 	}
-
+	/**
+	 A member function that initializes the before color as black color.
+	*/
 	void intializeBeforeColor(void) {
 		BeforeColor.R = 0;
 		BeforeColor.G = 0;
@@ -83,17 +85,18 @@ public:
 
 		return;
 	}
+	/**
+	 Receives the speed from Python client and set it as speed for RainbowAll function.
+	 @returns integer type of speed.
+	*/
+	int getSpeed(void) { // This function used to make some Segementation fault issues.
+		char cBuffer[4] = {};
+		int* pSpeed;
+	
+		recv(hClient, cBuffer, 4, 0);
+		pSpeed = (int*)cBuffer;
 
-	int getSpeed(void) {
-		char cBuffer;
-
-		recv(hClient, &cBuffer, 4, 0);
-		
-		Speed = (int)cBuffer;
-
-		std::cout << (int)Speed << std::endl;
-
-		return (int)cBuffer;
+		return *pSpeed;
 	}
 
 	void getOperationMode(void){

@@ -27,7 +27,7 @@ void SyncAllColors(Wrapper WrapperObj, ConnectrionBridge BridgeObj) {
 
 /// Our Friendly GUI function that prints our logo in ascii-art!
 void PrintTitle(void) {
-    std::cout << "                                                                             Windows 64bit C++ Side Program" << std::endl;
+    std::cout << "                                                                             Windows 32bit C++ Side Program" << std::endl;
     std::cout << "                                                                                              by Gooday2die" << std::endl;
     std::cout << "                                       Please Check My Github : https://github.com/gooday2dieAllPeripherals" << std::endl;
 
@@ -38,7 +38,7 @@ void PrintTitle(void) {
 /// @param argv This one also.
 int main(int argc, const char* argv[]) {
     PrintTitle();
-
+    
     Wrapper WrapperObj = Wrapper();
     ConnectrionBridge BridgeObj = ConnectrionBridge();
 
@@ -55,5 +55,5 @@ int main(int argc, const char* argv[]) {
         break;
     }
     return 0;
-
 }
+

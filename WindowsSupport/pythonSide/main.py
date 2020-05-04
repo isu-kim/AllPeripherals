@@ -18,7 +18,7 @@ def print_logo(easter_egg_on):
         print("██╔══██║██║     ██║     ██╔═══╝ ██╔══╝  ██╔══██╗██║██╔═══╝ ██╔══██║██╔══╝  ██╔══██╗██╔══██║██║     ╚════██║")
         print("██║  ██║███████╗███████╗██║     ███████╗██║  ██║██║██║     ██║  ██║███████╗██║  ██║██║  ██║███████╗███████║")
         print("╚═╝  ╚═╝╚══════╝╚══════╝╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝╚═╝     ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝")
-        print("                                                                                    MacOS PythonSide Script")
+        print("                                                                                WindowsOS PythonSide Script")
         print("                                                                                              By Gooday2die")
         print("                                      Please Check My Github : https://github.com/gooday2die/AllPeripherals")
 
@@ -32,7 +32,7 @@ def print_logo(easter_egg_on):
         print("  ▒   ▒▒ ░░ ░ ▒  ░░ ░ ▒  ░░▒ ░      ░ ░  ░  ░▒ ░ ▒░ ▒ ░░▒ ░      ▒ ░▒░ ░ ░ ░  ░  ░▒ ░ ▒░  ▒   ▒▒ ░░ ░ ▒  ░░ ░▒  ░ ░")
         print("  ░   ▒     ░ ░     ░ ░   ░░          ░     ░░   ░  ▒ ░░░        ░  ░░ ░   ░     ░░   ░   ░   ▒     ░ ░   ░  ░  ░  ")
         print("      ░  ░    ░  ░    ░  ░            ░  ░   ░      ░            ░  ░  ░   ░  ░   ░           ░  ░    ░  ░      ░  ")
-        print("                                                                                            MacOS PythonSide Script")
+        print("                                                                                        WindowsOS PythonSide Script")
         print("                                                                                                      By Gooday2die")
         print("                                              Please Check My Github : https://github.com/gooday2die/AllPeripherals")
 
@@ -78,6 +78,7 @@ def parse_argv():
 
             speed_index = argv_list.index("-speed")
             speed_param = int(argv_list[speed_index] + 1)
+            print(str(speed_param))
 
             if operation_mode_param not in valid_op_mode:
                 print("[ERROR] Invalid operation mode")
@@ -106,12 +107,22 @@ def screen_reactive():
         bridge_obj.send_rgb_value(rgb_list[0], rgb_list[1], rgb_list[2])
 
 
-def rainbow_all(speed):
+def rainbow_all():
     """
     This function is for doing all the rainbow all jobs in one function
     @param {void}
     @returns {void}
+
     """
+    while True:  # This part is for error and exception detection.
+        try:
+            speed = int(input("Speed (default 10) : "))
+            break
+    
+        except ValueError:  # if someone types 12swergw as input...
+            pass
+                
+
     bridge_obj = Bridge.Bridge(2)
 
     rainbow_obj = RainbowAll.RainbowAll(bridge_obj, speed)
@@ -131,7 +142,7 @@ if __name__ == "__main__":
 
     elif params[1] == 2:
         print("[OperationMode] Set Operation Mode 2 : Rainbow All")
-        rainbow_all(params[2])
+        rainbow_all()
 
     else:  # Called this script without parmeters
         print("Please Select Operation Mode")
@@ -151,15 +162,7 @@ if __name__ == "__main__":
 
         elif op_mode == 2:
             print("[OperationMode] Set Operation Mode 2 : Rainbow All")
-            while True:  # This part is for error and exception detection.
-                try:
-                    speed = int(input("Speed (default 10) : "))
-                    break
-
-                except ValueError:  # if someone types 12swergw as input...
-                    pass
-            
-            rainbow_all(speed)
+            rainbow_all()
 
         else:
             print("[ERROR] Not implemented")

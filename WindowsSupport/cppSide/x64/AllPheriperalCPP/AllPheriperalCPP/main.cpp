@@ -38,7 +38,7 @@ void PrintTitle(void) {
 /// @param argv This one also.
 int main(int argc, const char* argv[]) {
     PrintTitle();
-
+    
     Wrapper WrapperObj = Wrapper();
     ConnectrionBridge BridgeObj = ConnectrionBridge();
 
@@ -55,5 +55,5 @@ int main(int argc, const char* argv[]) {
         break;
     }
     return 0;
-
 }
+

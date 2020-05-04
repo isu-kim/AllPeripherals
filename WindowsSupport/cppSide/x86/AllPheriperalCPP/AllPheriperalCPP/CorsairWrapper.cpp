@@ -46,6 +46,8 @@ public:
     typedef void (Corsair::* SetLedFunctionPointer)(RGBVAL);// Declared a function pointer typedef for later purpose.
     //typedef void (Corsair::*SetLedFunctionPointer)(int, int, int);// Declared a function pointer typedef for later purpose.
     SetLedFunctionPointer* SetLedFunctionPointerArray;
+    CorsairLedPositions* ledpositiontest;
+    CorsairLedPosition ledpotest;
 
     Corsair() {
         DeviceCount = 0;

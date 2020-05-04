@@ -65,3 +65,20 @@ class Bridge():
         except BrokenPipeError:  # the case when server is closed.
             print("[Server] The Server is closed!")
             exit(0)
+
+    def send_speed(self, speed):
+        """
+        A method that sends server speed value.
+        @params {int} speed
+        @returns {void}
+        """
+        send_byte = bytearray()
+        send_byte.append(speed)
+        
+        try:
+            self.client_sock.send(send_byte)
+
+        except BrokenPipeError:  # the case when server is closed.
+            print("[Server] The Server is closed!")
+            exit(0)
+                

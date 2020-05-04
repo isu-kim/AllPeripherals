@@ -23,7 +23,6 @@ class RainbowAll:
         @params {void}
         @returns {void}
         """
-        print(self.speed)
         self.BridgeObj.send_speed(self.speed)
 
 

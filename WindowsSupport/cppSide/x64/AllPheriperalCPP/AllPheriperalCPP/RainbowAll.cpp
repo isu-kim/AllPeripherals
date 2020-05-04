@@ -2,9 +2,7 @@
 
 void RainbowAllEffect(Wrapper WrapperObj, ConnectrionBridge BridgeObj) {
 	int ChangeSpeed;
-
-	BridgeObj.getSpeed();
-    ChangeSpeed = BridgeObj.Speed;
+    ChangeSpeed = BridgeObj.getSpeed();
 
 	std::cout << "[RainbowAllEffect] Now Operating RainbowAllEffect" << std::endl;
     printf("[RainbowAllEffect] Speed : %d\n", ChangeSpeed);
