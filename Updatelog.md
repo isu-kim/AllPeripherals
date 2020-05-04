@@ -1,6 +1,14 @@
-## Update Log
-**- 20.04.28 : Fixed `segmentation fault` when calling `SetAllLedColor`  in `CorsairWrapper.cpp`**
-This Error was happening due to function pointer array. When a specific Corsair device is not connected, `MakeSetAllLedFunction` sets the function pointer as `NULL` pointer. `SetAllLedColor` calls this `NULL` pointer and results `segmentation fault`. I have added a function called `UselessFunction(RGBVAL)` to make not connected device function pointer to this function for safety. Reported by  a good friend of mine Christopher Dillard
 
-**- 20.04.28 : Changed how `RainbowAll` function works**
+## Update Log
+
+**- 2020.04.28 [1.1] : Fixed `segmentation fault` when calling `SetAllLedColor`  in `CorsairWrapper.cpp`**
+This Error was happening due to function pointer array. When a specific Corsair device is not connected, `MakeSetAllLedFunction` sets the function pointer as `NULL` pointer. `SetAllLedColor` calls this `NULL` pointer and results `segmentation fault`. I have added a function called `UselessFunction(RGBVAL)` to make not connected device function pointer to this function for safety. Reported by a good friend of mine Christopher Dillard
+
+**- 2020.04.28 [1.1] : Changed how `RainbowAll` function works**
 The previous version does run `RainbowAll` effect pretty well. However, the Python Handle Script sends too much repetitive information. So I have turned the `RainbowAll` function into C++ engine function. So, the Python Handle Script now just needs to send C++ engine program to run `RainbowAll` effect and then closes connection. All the `RainbowAll` effect is done by C++ engine program now.
+
+**- 2020.05.05 [1.1.1] : Kind of solved missing DLL errors.**
+There had been several issues about missing DLLs by some users, such as `MSCVP140.dll` missing. Special thanks to Daryl Drummond and Travis Zimmerman for letting me know there were this issue. The main reason for this bug or error was due to PC not having Visual Studio related DLL installed. Since my program is written and developed using Visual Studio IDE, the PC using this program has to install those Visual Studio related DLLs. You can download the files from Windows official website. I have manually added those necessary DLLs to Release package in version `Win.v.1.1.1` released few minutes ago as hot-fix. Please note that this is kind of temporary fix for the program. I would be searching for new and better ways to fix it.
+
+**- 2020.05.05 [1.1.1] : Fixed some critical runtime errors** 
+The version 1.1 had kind of bug when I fixed my `RainbowAll` function at date 2020.04.28. I used wrong typecasting as well as wrong pointer types and wrong pointer indication in function `getSpeed` from `Bridge.cpp`. This results the program shutting itself down during runtime, exactly at the moment when the program communicates with Python HandleScript. Thanks to Travis Zimmerman, I was able to find that there were something wrong with the `Bridge.cpp` and then I was able to fix the program a bit. The socket in `Windows.h` only supports character pointers as their Socket buffers. I do know that other libraries support other data types, however in Windows it only supports `char*` as its arguments. (Please check [Here](https://docs.microsoft.com/en-us/windows/win32/winsock/sending-and-receiving-data-on-the-client)  here fore more information). I had to make four `char[]` as one `int` value. After I used my brain, I was able to correctly fix it.
