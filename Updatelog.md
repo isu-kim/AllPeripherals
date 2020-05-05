@@ -1,4 +1,5 @@
 
+
 ## Update Log
 
 **- 2020.04.28 [1.1] : Fixed `segmentation fault` when calling `SetAllLedColor`  in `CorsairWrapper.cpp`**
@@ -12,3 +13,8 @@ There had been several issues about missing DLLs by some users, such as `MSCVP14
 
 **- 2020.05.05 [1.1.1] : Fixed some critical runtime errors** 
 The version 1.1 had kind of bug when I fixed my `RainbowAll` function at date 2020.04.28. I used wrong typecasting as well as wrong pointer types and wrong pointer indication in function `getSpeed` from `Bridge.cpp`. This results the program shutting itself down during runtime, exactly at the moment when the program communicates with Python HandleScript. Thanks to Travis Zimmerman, I was able to find that there were something wrong with the `Bridge.cpp` and then I was able to fix the program a bit. The socket in `Windows.h` only supports character pointers as their Socket buffers. I do know that other libraries support other data types, however in Windows it only supports `char*` as its arguments. (Please check [Here](https://docs.microsoft.com/en-us/windows/win32/winsock/sending-and-receiving-data-on-the-client)  here fore more information). I had to make four `char[]` as one `int` value. After I used my brain, I was able to correctly fix it.
+
+**- 2020.05.05 [1.1.1] : Fixed ETC devices not working**
+The version 1.1.1 had a part that was making issues for ETC devices in `SetAllLedColor` in `CorsairWrapper.cpp`. The original way how this program worked was by iterating number of counts in the function pointer array. I was planning to make this as like Python style list iteration, however it was kind of complicated for C++ style. So, I had a variable named `DevInfo.TotalFunctionPointerCounts`. this counted how much iterations was going to be needed. However, due to my lack of knowledge, I have made a mistake in function pointer array. For example, if we had Headphones, Mouse, Keyboard, and ETC devices, the total count of `DevInfo.TotalFunctionPointerCounts` is 4. This will only iterate 4 times. However, in my function pointer array which is made from `MakeSetAllLedFunction`, iterating 4 times will only light up Headphones, Mouse, Keyboard. Since ETC devices has index of 5, the iteration will not reach index 5 and make those devices black. I have fixed this issue in MacOS side by modifying the code from  `for (int i = 0; i < DevInfo.TotalFunctionPointerCounts ; i++)` to  `for (int i = 0; i < 6; i++)`. However I have forgot to fix the code in Windows Side of the program as well. 
+
+
