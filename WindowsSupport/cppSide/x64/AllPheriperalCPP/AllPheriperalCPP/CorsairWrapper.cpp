@@ -405,7 +405,7 @@ public:
 
     void SetAllLedColor(RGBVAL Value) {
         //void SetAllLedColor(int R, int G, int B){
-        for (int i = 0; i < DevInfo.TotalFunctionPointerCounts; i++) {
+        for (int i = 0; i < 6; i++) {
             (this->*SetLedFunctionPointerArray[i])(Value);
             //(this->*SetLedFunctionPointerArray[i])(R,G,B);
         }
