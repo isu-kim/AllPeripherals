@@ -48,6 +48,7 @@ public:
     SetLedFunctionPointer* SetLedFunctionPointerArray;
     CorsairLedPositions* ledpositiontest;
     CorsairLedPosition ledpotest;
+    CorsairLedColor* AllLedArray;
 
     Corsair() {
         DeviceCount = 0;
@@ -58,6 +59,10 @@ public:
         std::cout << "[Corsair] Successfully Requested Control" << std::endl;
         SetDeviceInfo(&DevInfo);
         MakeSetAllLedFunction();
+
+        AllLedArray = (CorsairLedColor*)malloc(sizeof(CorsairLedColor) * 912);
+        for (int i = 0 ; i < 912 ; i++)AllLedArray[i].ledId = static_cast<CorsairLedId>(i);
+
         std::cout << "[Corsair] Dumped Files to RAM" << std::endl;
         std::cout << "[Corsair] Initialization Process Complete" << std::endl;
 
@@ -311,7 +316,7 @@ public:
 
     void SetEtcColors(RGBVAL Value) {
         //void SetEtcColors(int R, int G, int B){
-        for (int i = 0; i < 730; i++) {
+        /*for (int i = 0; i < 730; i++) {
             LedArray.Etc[i].r = Value.R;
             LedArray.Etc[i].g = Value.G;
             LedArray.Etc[i].b = Value.B;
@@ -322,6 +327,11 @@ public:
         CorsairSetLedsColorsBufferByDeviceIndex(DevInfo.Indexes.LightingNode, 730, LedArray.Etc);
         CorsairSetLedsColorsBufferByDeviceIndex(DevInfo.Indexes.Unknown, 730, LedArray.Etc);
         CorsairSetLedsColorsFlushBuffer();
+        */
+
+        for (int i = 200; i < 912; i++)
+            SetLedColorByID(static_cast<CorsairLedId>(i), Value.R, Value.G, Value.B);
+
         return;
     }
 
@@ -403,12 +413,24 @@ public:
     /// This function is kind of dynamic in order to save the computer's resource.
     /// @param Value The RGBVAL type of data to set color as
 
-    void SetAllLedColor(RGBVAL Value) {
+    void oldSetAllLedColor(RGBVAL Value) {
         //void SetAllLedColor(int R, int G, int B){
         for (int i = 0; i < 6; i++) {
             (this->*SetLedFunctionPointerArray[i])(Value);
             //(this->*SetLedFunctionPointerArray[i])(R,G,B);
         }
+        return;
+    }
+
+
+    void newSetAllLedColor(RGBVAL Value) {
+       //std::cout << "New function" << std::endl;
+        for (int i = 0; i < 912; i++) {
+            AllLedArray[i].r = Value.R;
+            AllLedArray[i].g = Value.G;
+            AllLedArray[i].b = Value.B;
+        }
+        CorsairSetLedsColors(912, AllLedArray);
         return;
     }
 };

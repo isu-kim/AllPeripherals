@@ -1,6 +1,9 @@
 ﻿  CorsairWrapper.cpp
 C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\include\CUESDK.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
   WARNING: CUESDK deprecation warnings were disabled
+  Wrapper.cpp
+C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\include\CUESDK.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+  WARNING: CUESDK deprecation warnings were disabled
   main.cpp
 C:\Users\FlagShipPC\Documents\GitHub\AllPeripherals\WindowsSupport\cppSide\x86\AllPheriperalCPP\AllPheriperalCPP\Library\CUESDK\include\CUESDK.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
   WARNING: CUESDK deprecation warnings were disabled

@@ -30,7 +30,7 @@ public:
 	}
 
 	void SetAllLedColor(RGBVAL value) {
-		CorsairObj.SetAllLedColor(value);
+		CorsairObj.newSetAllLedColor(value);
 		RazerObj.SetAllLedColor(value);
 	}
 
