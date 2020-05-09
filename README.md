@@ -72,6 +72,8 @@ None yet. However, those following devices would be supported for sure.
 
 
 ## Demo Images
+For more demo images, please check https://github.com/gooday2die/AllPeripherals/blob/master/Demo.md
+
 ![enter image description here](https://github.com/gooday2die/AllPeripherals/blob/master/GithubAssets/video_0%20%281%29.gif?raw=true)
 Image showing all the device's LED colors are synced.
 
