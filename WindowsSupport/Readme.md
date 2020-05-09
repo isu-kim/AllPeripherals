@@ -14,6 +14,13 @@ Currently Checked Devices
 - Razer DeathAdder Chroma
 - Corsair NightSword RGB (By Christopher Dillard)
 - Corsair K57 RGB WIRELESS (By Christopher Dillard)
+- Corsair M65 RGB Elite (By Daryl Drummond)
+- Corsair K70 RGB MK.2 SE (By Daryl Drummond)
+- Corsair Virtuoso (By Daryl Drummond)
+- Corsair Vengeance RGB Pro (By Daryl Drummond)
+- Corsair Lighting Node (By Daryl Drummond)
+- Corsair H100i Platinum SE (By Daryl Drummond)
+
 
 ## Installation Guide
 In order to run this program, you should have Python3(I would suggest you using  Python 3.7.x) installed in your PC. Also there are several dependency modules and libraries for this script to work. I would explain those modules and their purposes as well as installation guide. 
