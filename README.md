@@ -1,4 +1,6 @@
 ## AllPeripheral
+> Also an updated version with the same project in `cython` can be found [here](https://github.com/gooday2die/PyRGBDev)
+
 A program written in C++ and Python for synchronizing all SDKs with one program. Supports Windows and MacOS.
 
 ## Basic Info 
